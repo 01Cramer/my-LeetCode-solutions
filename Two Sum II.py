@@ -8,7 +8,7 @@ class Solution:
         if numbers[l] >= 0:  # No negative values, target > 0
             while numbers[r] > target and r > 1:
                 r -= 1
-        else:  # Negative valeus, target > 0
+        else:  # Negative values
             while numbers[l] + numbers[r] < target and l < r:
                 l += 1
             while numbers[l] + numbers[r] > target and l < r:
